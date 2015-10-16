@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table" id="car-table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Model
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Color
+        </th>
+    </tr>
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/cars")
+}
